@@ -1,0 +1,96 @@
+/* Reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  header#cabecalho {
+      font-family: 'Arial';
+      font-size: 14px;
+     }
+   div#titulo, div#compra{
+     text-align: center;
+   }
+   ul#inicio{
+     margin: 0 0 0 30px;
+   }
+  h2, h5, h6{
+    text-align: center ;
+  }
+ .btn-primary.custom-btn {
+    background-color: #4472c4;
+  }
+
+  .btn-outline-primary{
+    border: solid 1px black;
+    color: rgba(68, 114, 196, 0.5);
+    background-color: #d0cece;
+  }
+  .btn-outline-primary:hover{
+    border: solid 3px #4472c4;
+    color: rgba(68, 114, 196, 1);
+    background-color: #d0cece;
+  }
+
+  .button {
+    margin-top: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid black;
+  }
+  
+  .button1:hover {
+    margin-top: 0px;
+    border: 1px solid rgba(68, 114, 196, 1);
+    border-top: solid 5px rgba(68, 114, 196, 1);
+    color: black; 
+    text-decoration: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    padding: 0 150px 0 150px;
+  }
+  .grid-sub_container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto ;
+    padding: 0 150px 0 150px;
+  }
+  .grid-end_container {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    background-color: #d0cece;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-end-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 0px
+  }
+  footer#rodape{
+    clear: both;
+    padding-right: 20px;
+  }
+    footer#rodape h6{
+      text-align: center;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        datalist {
+            display: none;
+        }
+
+        form input,
+        form button {
+            font-size: 20px;
+            border-radius: 2px;
+            border: none;
+            padding: 5px;
+        }
+
+        form datalist option{
+            font-family: 'Arial';
+            font-size: 14px;
+        }
+
+        form button {
+            cursor: pointer;
+            background: none;
+            color: rgba(68, 114, 196, 1);
+        }
+
+        form button:hover {
+            background-color:  white;
+            color: rgba(68, 114, 196, 1);
+        }
+
+
+        /* AQUI */
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./_css/estilo1.css">
+    <script src="./_javascript/busca.js"></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <header id="cabecalho">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./_imagem/logo.svg" alt="" width="100" height="100">
+                    </a>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <form class="d-flex">
+                                    <input class="form-control me-4" onclick="buscar()" type="search" id="Informa" list="conteudo"
+                                        placeholder="Buscar notebooks, desktops, monitores e muito mais !"
+                                        aria-label="Search" required>
+                                    <datalist id="conteudo">
+                                        <option data-value="1" value="Pessoal">Pessoal</option>
+                                        <option data-value="2" value="Notebook Pessoal"></option>
+                                        <option value="Notebook Profissional"></option>
+                                        <option value="Notebook Profissional SSD"></option>
+                                        <option value="Desktop Pessoal"></option>
+                                        <option value="Desktop Profissional"></option>
+                                        <option value="Desktop Profissional SSD"></option>
+                                        <option value="Notebook Gamer"></option>
+                                        <option value="Monitor Gamer"></option>
+                                        <option value="Acessórios"></option>
+                                    </datalist>
+                                    <button class="btn btn-primary custom-btn" type="submit">Buscar</button>
+                                </form>
+                            </div>
+
+                            <div class="col-1">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./cadastro/index.html">
+                                            <img src="./_imagem/pessoa.svg" alt="" width="30" height="30">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-1">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <img src="./_imagem/carrinho.svg" alt="" width="30" height="30">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto px-5 mb-4 mb-lg-0">
+                            <li class="nav-item px-5">
+                                <a class="nav-link active" aria-current="page" href="pagina_pessoal.html">Uso
+                                    Pessoal</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="pagina_profissional.html">Uso Profissional</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="pagina_gamer.html">Gamer</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="./pagina_acessorios.html">Acessórios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <form class="pesquisa">
+            <input type="search" id="texto" list="conteudo" placeholder="Pesquisar...">
+            <img src="./_imagem/lupa.svg" class="btn" alt="">
+            <datalist id="conteudo">
+                <option id="1" value="Notebook Pessoal">
+                <option id="2" value="Notebook Profissional">
+                <option id="3" value="Notebook Profissional SSD">
+                <option id="4" value="Desktop Pessoal">
+                <option id="5" value="Desktop Profissional">
+                <option id="5" value="Desktop Profissional SSD"></option>
+                <option id="5" value="Notebook Gamer"></option>
+                <option id="5" value="Monitor Gamer"></option>
+                <option id="5" value="Acessórios"></option>
+            </datalist>
+
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

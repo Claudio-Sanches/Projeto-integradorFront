@@ -1,0 +1,35 @@
+.carousel-inner>.item>a>img {
+    width: 70%;
+    margin: auto;
+}
+.carousel-control-prev-icon {
+    background-image: url("../_imagem/esquerda.svg");
+}
+
+.carousel-control-next-icon {
+    background-image: url("../_imagem/direita.svg");
+}
+
+ol.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    float: left;
+    width: 10%;
+    height: 5px;
+    margin: 0;
+    border: solid #4472c4 0.5px;
+    background: transparent;
+}
+
+ol.carousel-indicators li.active {
+    background: #4472c4;
+}

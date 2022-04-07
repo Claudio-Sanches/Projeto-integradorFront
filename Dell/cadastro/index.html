@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css " rel="stylesheet">
+    <link rel="stylesheet" href="./_css/estilo.css">
+
+    <!-- Adicionando Javascript -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        crossorigin="anonymous"></script>
+
+    <script src="./_JavaScript/inicio.js"> </script>
+    <script src="./_JavaScript/evoliu.js"></script>
+
+    <script src="./_JavaScript/criando.js"></script>
+    <script src="./_JavaScript/valida_framework.js"></script>
+    <script src="./_JavaScript/criajson.js"></script>
+    <script src="./_JavaScript/mascara.js"></script>
+
+</head>
+
+<body>
+    <div id="interface">
+        <header backgroup-color:>
+            <a href="../index.html">
+                <img class="img-fluid" src="./_imagens/logo.svg" alt="" width="100" height="100">
+            </a>
+            <h6 id="tempo">Tempo para preencher o formulário </h6>
+            <div class="progress"></div>
+        </header>
+        <hr>
+        <form name="form" id="form" method="get" action="." onsubmit="return validar_tudo();">
+            <table>
+                <h6>Cadastro de Clientes </h6>
+                <tbody id="one">
+                    <tr>
+                        <td> <label>Nome:</label></td>
+                        <td> <input type="text" name="Nome" id="Nome" autocomplete="off" size="40" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>CPF ou CNPJ: </label></td>
+                        <td><input name="cpfcnpj" id="cpfcnpj" autocomplete="off" required
+                                placeholder="Json 123.456.788-90 / 12.345.678/0001-00" size="40" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Telefone:</label></td>
+                        <td><input type="text" name="tel" id="tel" autocomplete="off" class="mask-tel" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Celular:</label></td>
+                        <td><input type="text" name="cel" id="cel" autocomplete="off" class="mask-cel" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Cep:</label></td>
+                        <td><input type="text" name="cep" id="cep" autocomplete="off" class="mask-cep" value=""
+                                size="10" maxlength="9" onblur="pesquisacep(this.value);" required /></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button id="butassin" class="btn btn-outline-primary" type="submit" disabled>Validar
+                                Formulário</button>
+
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <hr>
+        <footer id="rodape">
+            <a href="C:\Users\claudio.sanches\Desktop\Claudio\Curso Senai\Projeto integrador\index.html" class="button"
+                role="button">
+                <img class="img-fluid" src="./_imagens/lg_Claudio1.jpg">
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
